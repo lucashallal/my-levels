@@ -1,0 +1,56 @@
+import pygame
+pygame.init()
+screen = pygame.display.set_mode((1000, 1000))
+
+def load_assets5():
+    brick_block = pygame.transform.scale_by(pygame.image.load('../Graphics/normal_block.png').convert_alpha(), 0.3)
+    thwomp = pygame.transform.scale_by(pygame.image.load('../Graphics/thwomp.png').convert_alpha(), 0.6)
+    wing = pygame.transform.scale_by(pygame.image.load('../Graphics/wing.png').convert_alpha(), 0.3)
+    pipe = pygame.transform.scale_by(pygame.image.load('../Graphics/pipe.png').convert_alpha(), 0.6)
+    enemy = pygame.transform.scale_by(pygame.image.load('../Graphics/enemy.png').convert_alpha(), 0.2)
+    mushroom = pygame.transform.scale_by(pygame.image.load('../Graphics/mushroom.png').convert_alpha(), 0.4)
+    question_block = pygame.transform.scale_by(pygame.image.load('../Graphics/question_block.png').convert_alpha(), 0.4)
+    hit_block = pygame.transform.scale_by(pygame.image.load('../Graphics/hit_block.png').convert_alpha(), 0.4)
+    spike_trap = pygame.transform.scale_by(pygame.image.load('../Graphics/spike_trap.png').convert_alpha(), 0.3)
+    sky = pygame.transform.scale_by(pygame.image.load('../Graphics/skybox.jpg').convert_alpha(), 3)
+    return brick_block,thwomp,wing,pipe,enemy,mushroom,question_block,hit_block,spike_trap,sky
+
+def load_assets6():
+    font = pygame.font.Font(None, 100)
+    enemy = pygame.transform.scale_by(pygame.image.load('../Graphics/enemy.png').convert_alpha(), 0.2)
+    mushroom = pygame.transform.scale_by(pygame.image.load('../Graphics/mushroom.png').convert_alpha(), 0.4)
+    piranha = pygame.transform.scale_by(pygame.image.load('../Graphics/piranha.png').convert_alpha(), 0.3)
+    piranha.set_colorkey("White")
+    propeller = pygame.transform.scale_by(pygame.image.load('../Graphics/propeller.png').convert_alpha(), 0.3)
+    question_block = pygame.transform.scale_by(pygame.image.load('../Graphics/question_block.png').convert_alpha(), 0.4)
+    hit_block = pygame.transform.scale_by(pygame.image.load('../Graphics/hit_block.png').convert_alpha(), 0.4)
+    spike = pygame.transform.scale_by(pygame.image.load('../Graphics/spike.png').convert_alpha(), 0.2)
+    spike.set_colorkey("White")
+    spike_ceiling = pygame.transform.scale_by(pygame.image.load('../Graphics/spike_ceiling.png').convert_alpha(), 0.3)
+    spike_trap = pygame.transform.scale_by(pygame.image.load('../Graphics/spike_trap.png').convert_alpha(), 0.3)
+    arrow = pygame.transform.scale_by(pygame.image.load('../Graphics/arrow.png').convert_alpha(), 0.3)
+    text = font.render('You win! Press esc to exit.', False, 'Black')
+    sky = pygame.transform.scale_by(pygame.image.load('../Graphics/skybox.jpg').convert_alpha(), 3)
+    return enemy,mushroom,piranha,propeller,question_block,hit_block,spike,spike_ceiling,spike_trap,arrow,text,sky
+
+def load_all():
+    font = pygame.font.Font(None, 100)
+    brick_block = pygame.transform.scale_by(pygame.image.load('../Graphics/normal_block.png').convert_alpha(), 0.3)
+    thwomp = pygame.transform.scale_by(pygame.image.load('../Graphics/thwomp.png').convert_alpha(), 0.6)
+    wing = pygame.transform.scale_by(pygame.image.load('../Graphics/wing.png').convert_alpha(), 0.3)
+    pipe = pygame.transform.scale_by(pygame.image.load('../Graphics/pipe.png').convert_alpha(), 0.6)
+    enemy = pygame.transform.scale_by(pygame.image.load('../Graphics/enemy.png').convert_alpha(), 0.2)
+    mushroom = pygame.transform.scale_by(pygame.image.load('../Graphics/mushroom.png').convert_alpha(), 0.4)
+    question_block = pygame.transform.scale_by(pygame.image.load('../Graphics/question_block.png').convert_alpha(), 0.4)
+    hit_block = pygame.transform.scale_by(pygame.image.load('../Graphics/hit_block.png').convert_alpha(), 0.4)
+    spike_ceiling = pygame.transform.scale_by(pygame.image.load('../Graphics/spike_ceiling.png').convert_alpha(), 0.3)
+    sky = pygame.transform.scale_by(pygame.image.load('../Graphics/skybox.jpg').convert_alpha(), 3)
+    piranha = pygame.transform.scale_by(pygame.image.load('../Graphics/piranha.png').convert_alpha(), 0.3)
+    piranha.set_colorkey("White")
+    propeller = pygame.transform.scale_by(pygame.image.load('../Graphics/propeller.png').convert_alpha(), 0.3)
+    spike = pygame.transform.scale_by(pygame.image.load('../Graphics/spike.png').convert_alpha(), 0.2)
+    spike.set_colorkey("White")
+    spike_trap = pygame.transform.scale_by(pygame.image.load('../Graphics/spike_trap.png').convert_alpha(), 0.3)
+    arrow = pygame.transform.scale_by(pygame.image.load('../Graphics/arrow.png').convert_alpha(), 0.3)
+    text = font.render('You win! Press esc to exit.', False, 'Black')
+    return font,brick_block,thwomp,wing,pipe,enemy,mushroom,question_block,hit_block,spike_ceiling,sky,piranha,propeller,spike,spike_trap,arrow,text
